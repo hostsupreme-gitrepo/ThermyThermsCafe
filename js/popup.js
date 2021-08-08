@@ -33,8 +33,8 @@ var pop = {
     },
   
     // (B) OPEN POPUP
-    open : function (title, text) {
-      pop.pTitle.innerHTML = title;
+    open : function (that,text = 'Coming Soon') {
+      pop.pTitle.innerHTML = that.innerText;
       pop.pText.innerHTML = text;
       pop.pWrap.classList.add("open");
     },
@@ -45,4 +45,28 @@ var pop = {
     }
   };
   window.addEventListener("DOMContentLoaded", pop.init);
+
+  hoursinnerText = `<div class="hours">
+      <ul class="Days">
+          <li class="day">Sunday</li>
+          <li class="day">Monday</li>
+          <li class="day">Tuesday</li>
+          <li class="day">Wednsday</li>
+          <li class="day">Thurday</li>
+          <li class="day">Friday</li>
+          <li class="day">Saturday</li>
+      </ul>
+    </div>`;
+
+  menupdf = `"https://www.texasroadhouse.com/texas-roadhouse-master-menu.pdf"`;
+
+  MenuinnerText = () => {
+    return `<div class="menu">
+    <h1>Menu</h1>
+    <p><a href=${menupdf}>Download</a>.</p>
+    <embed src=${menupdf} type="application/pdf" width="100%"  /> 
+    
+    </div>`;
+  };
+  
   
