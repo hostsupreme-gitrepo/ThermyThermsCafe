@@ -4,8 +4,8 @@
 	background-image: linear-gradient(rgba($color-secondary, 0.7), rgba($color-secondary, 0.7)), url(../img/hero.png);
 	background-size: 12rem;
 	/*background-position: ;*/
-	padding: 8rem;
-	padding-top: 4rem;
+	padding: 4rem;
+	padding-top: 0rem;
 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -23,7 +23,10 @@
 		grid-template-columns: 1fr;
 	}
 	&__logo {
-		height: 60rem;
+		padding-right: 2rem;
+		margin-top: -2rem;
+		margin-left: -8rem;
+		height: 70rem;
 		justify-self: left;
 
 		@media only screen and (max-width: $bp-small) {
@@ -70,6 +73,8 @@
 	}
 
 	&__seenon-logos {
+		min-height: 6rem;
+		margin-top: -2rem;
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 3rem;
@@ -77,16 +82,16 @@
 		align-items: center;
 
 		img {
-			height: 2.5rem;
-			max-height: 4rem;
+			height: 3.5rem;
+			max-height: 8rem;
 			max-width: 100%;
 			filter: brightness(70%);
 			transition: all 0.25s ease-in;
 
 			&:hover {
-				height: 3.5rem;
+				height: 5.5rem;
 				filter: brightness(100%);
-				margin-top: -1.5rem;
+				margin-top: 0rem;
 			}
 			@media only screen and (max-width: $bp-small) {
 				filter: brightness(100%);
@@ -106,7 +111,7 @@
 	}
 	.heading-1 {
 		@media only screen and (max-width: $bp-small) {
-			padding: 0.5rem;
+			padding: 2rem;
 			font-size: 2.5rem;
 			text-align: center;
 		}

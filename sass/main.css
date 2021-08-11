@@ -55,7 +55,8 @@ body {
   }
 }
 
-section .features {
+section .features,
+section .home {
   display: none;
 }
 
@@ -94,6 +95,10 @@ iframe {
   iframe {
     max-width: 87vw;
   }
+}
+
+#g6074 {
+  z-index: 200;
 }
 
 .heading-1, .heading-2, .heading-3, .heading-4 {
@@ -249,8 +254,8 @@ iframe {
   background-image: linear-gradient(rgba(16, 29, 44, 0.7), rgba(16, 29, 44, 0.7)), url(../img/hero.png);
   background-size: 12rem;
   /*background-position: ;*/
-  padding: 8rem;
-  padding-top: 4rem;
+  padding: 4rem;
+  padding-top: 0rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -279,7 +284,10 @@ iframe {
 }
 
 .header__logo {
-  height: 60rem;
+  padding-right: 2rem;
+  margin-top: -2rem;
+  margin-left: -8rem;
+  height: 70rem;
   -ms-grid-column-align: left;
       justify-self: left;
 }
@@ -349,6 +357,8 @@ iframe {
 }
 
 .header__seenon-logos {
+  min-height: 6rem;
+  margin-top: -2rem;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -361,8 +371,8 @@ iframe {
 }
 
 .header__seenon-logos img {
-  height: 2.5rem;
-  max-height: 4rem;
+  height: 3.5rem;
+  max-height: 8rem;
   max-width: 100%;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
@@ -371,10 +381,10 @@ iframe {
 }
 
 .header__seenon-logos img:hover {
-  height: 3.5rem;
+  height: 5.5rem;
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  margin-top: -1.5rem;
+  margin-top: 0rem;
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -399,7 +409,7 @@ iframe {
 
 @media only screen and (max-width: 37.5em) {
   .header .heading-1 {
-    padding: 0.5rem;
+    padding: 2rem;
     font-size: 2.5rem;
     text-align: center;
   }
@@ -719,8 +729,8 @@ iframe {
 }
 
 .card__side--back-1, .card__side--back-2, .card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(60%, rgba(249, 247, 246, 0.33)), to(rgba(33, 84, 172, 0.33))), url(../img/logos/hdr-1-a2.png);
-  background-image: linear-gradient(to right bottom, rgba(249, 247, 246, 0.33) 60%, rgba(33, 84, 172, 0.33)), url(../img/logos/hdr-1-a2.png);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(40%, rgba(249, 247, 246, 0.1)), to(rgba(33, 84, 172, 0.33))), url(../img/logos/hdr-1-a2.png);
+  background-image: linear-gradient(to right bottom, rgba(249, 247, 246, 0.1) 40% 66deg, rgba(33, 84, 172, 0.33)), url(../img/logos/hdr-1-a2.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
