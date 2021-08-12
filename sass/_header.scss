@@ -30,8 +30,10 @@
 		justify-self: left;
 
 		@media only screen and (max-width: $bp-small) {
-			height: 45rem;
+			width: 95vw;
+			height: auto;
 			justify-self: center;
+			margin-left: 2rem;
 		}
 	}
 	&__sub {
