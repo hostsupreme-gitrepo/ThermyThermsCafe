@@ -2,10 +2,10 @@
 #popwrap {
 	/* (A1) FULLSCREEN COVER*/
 	position: fixed;
-	top: 8vw;
+	top: 2vw;
 	left: 12.5vw;
 	width: 75vw;
-	height: 50vh;
+	height: 65vh;
 	background: rgba(0, 0, 0, 0.5);
 	z-index: 200;
 
@@ -31,7 +31,7 @@
 	position: relative;
 	box-sizing: border-box;
 	min-width: 50vw;
-	max-height: 45vh;
+	max-height: 75vh;
 }
 
 /* (C) TITLE + TEXT + CLOSE BUTTON  */
@@ -42,46 +42,58 @@
 	background: #fff;
 
 	& .contact__content {
+		max-width: 55vw;
+		max-height: 35vh;
 		display: grid;
+		grid-gap: 1rem;
 		grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
 		grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-		grid-gap: 3rem;
+	}
 
-		& .conctact__details {
-			display: grid;
-			& .conctact__detail .detail-- {
-				&1 {
-					grid-column: col1-start / col2-start;
-					grid-row: row1-start;
-				}
-				&2 {
-					grid-column: col2-start;
-					grid-row: row1-start;
-				}
-				&3 {
-					grid-column: col3-start;
-					grid-row: row1-start;
-				}
-			}
+	.contactbox {
+		& .email {
+			grid-column: col1-start / col2-start;
+			grid-row: row1-start;
 		}
-
-		& .form-section {
-			& form {
-				grid-column: col1-start;
-				grid-row: row2-start;
-				display: grid;
-				grid-template-columns: 0.5fr auto;
-				grid-gap: 1rem;
-				text-align: left;
-
-				& textarea {
-					grid-column: col2-start/col3-end;
-					grid-row: row2-start;
-					height: 10rem;
-					width: 30rem;
-				}
-			}
+		& .address {
+			grid-column: col2-start;
+			grid-row: row1-start;
 		}
+		& .phone {
+			grid-column: col3-start;
+			grid-row: row1-start;
+		}
+	}
+
+	.contactform {
+		grid-column: col1-start/col3-end;
+		grid-row: row2-start;
+		display: grid;
+		grid-template-columns: [col1-start] 1fr [col2-start] 1.5fr;
+
+		grid-gap: 1rem;
+		padding: 1rem;
+		background: rgba(119, 156, 216, 0.664) 60%;
+		text-align: left;
+	}
+	.form--entry {
+		grid-column: col1-start/col2-start;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+	.form--message {
+		grid-column: col2-start/col3-end;
+
+		& textarea {
+			width: 100%;
+			height: 9vh;
+		}
+	}
+	.form--button {
+		grid-column: col1-start/col3-end;
+		grid-row: row2-start;
+		text-align: center;
 	}
 }
 #poptitle,

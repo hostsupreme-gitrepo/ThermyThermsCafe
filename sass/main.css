@@ -1093,10 +1093,10 @@ iframe {
 #popwrap {
   /* (A1) FULLSCREEN COVER*/
   position: fixed;
-  top: 8vw;
+  top: 2vw;
   left: 12.5vw;
   width: 75vw;
-  height: 50vh;
+  height: 65vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 200;
   /* (A2) CENTER BOX ON PAGE */
@@ -1128,7 +1128,7 @@ iframe {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 50vw;
-  max-height: 45vh;
+  max-height: 75vh;
 }
 
 /* (C) TITLE + TEXT + CLOSE BUTTON  */
@@ -1141,51 +1141,68 @@ iframe {
 }
 
 #popcontent .contact__content {
+  max-width: 55vw;
+  max-height: 35vh;
   display: -ms-grid;
   display: grid;
+  grid-gap: 1rem;
   -ms-grid-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
       grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
   -ms-grid-rows: [row1-start] auto [row2-start] auto [row2-end];
       grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
-  grid-gap: 3rem;
 }
 
-#popcontent .contact__content .conctact__details {
-  display: -ms-grid;
-  display: grid;
-}
-
-#popcontent .contact__content .conctact__details .conctact__detail .detail--1 {
+#popcontent .contactbox .email {
   grid-column: col1-start / col2-start;
   grid-row: row1-start;
 }
 
-#popcontent .contact__content .conctact__details .conctact__detail .detail--2 {
+#popcontent .contactbox .address {
   grid-column: col2-start;
   grid-row: row1-start;
 }
 
-#popcontent .contact__content .conctact__details .conctact__detail .detail--3 {
+#popcontent .contactbox .phone {
   grid-column: col3-start;
   grid-row: row1-start;
 }
 
-#popcontent .contact__content .form-section form {
-  grid-column: col1-start;
+#popcontent .contactform {
+  grid-column: col1-start/col3-end;
   grid-row: row2-start;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 0.5fr auto;
-      grid-template-columns: 0.5fr auto;
+  -ms-grid-columns: [col1-start] 1fr [col2-start] 1.5fr;
+      grid-template-columns: [col1-start] 1fr [col2-start] 1.5fr;
   grid-gap: 1rem;
+  padding: 1rem;
+  background: rgba(119, 156, 216, 0.664) 60%;
   text-align: left;
 }
 
-#popcontent .contact__content .form-section form textarea {
+#popcontent .form--entry {
+  grid-column: col1-start/col2-start;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+#popcontent .form--message {
   grid-column: col2-start/col3-end;
+}
+
+#popcontent .form--message textarea {
+  width: 100%;
+  height: 9vh;
+}
+
+#popcontent .form--button {
+  grid-column: col1-start/col3-end;
   grid-row: row2-start;
-  height: 10rem;
-  width: 30rem;
+  text-align: center;
 }
 
 #poptitle,
