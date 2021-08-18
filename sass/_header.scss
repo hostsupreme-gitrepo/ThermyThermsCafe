@@ -6,7 +6,7 @@
 	/*background-position: ;*/
 	padding: 4rem;
 	padding-top: 0rem;
-
+	max-height: 85vh;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr min-content minmax(6rem, min-content);
@@ -23,6 +23,7 @@
 		grid-template-columns: 1fr;
 	}
 	&__logo {
+		max-height: 80vh;
 		padding-right: 2rem;
 		margin-top: -2rem;
 		margin-left: -8rem;
@@ -37,6 +38,7 @@
 		}
 	}
 	&__sub {
+		max-height: 85vh;
 		display: grid;
 		justify-self: center;
 		grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
