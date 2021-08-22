@@ -46,7 +46,7 @@
 						rgba($color-grey-light-1, 0.1) 40% 66deg,
 						rgba($color-primary, 0.33)
 					),
-					url(../img/logos/hdr-1-a2.png);
+					url(img/logos/hdr-1-a2.png);
 				background-size: contain;
 				background-repeat: no-repeat;
 			}
@@ -72,15 +72,15 @@
 		border-top-right-radius: 3px;
 
 		&--1 {
-			background-image: url(/img/food/Food2.jpg);
+			background-image: url(img/food/Food2.jpg);
 		}
 
 		&--2 {
-			background-image: url(/img/food/Food2.jpg);
+			background-image: url(img/food/Food2.jpg);
 		}
 
 		&--3 {
-			background-image: url(/img/food/Food2.jpg);
+			background-image: url(img/food/Food2.jpg);
 		}
 	}
 
