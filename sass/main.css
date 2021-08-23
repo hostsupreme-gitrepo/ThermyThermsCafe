@@ -734,8 +734,8 @@ iframe {
 }
 
 .card__side--back-1, .card__side--back-2, .card__side--back-3 {
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(40%, rgba(249, 247, 246, 0.1)), to(rgba(33, 84, 172, 0.33))), url(img/logos/hdr-1-a2.png);
-  background-image: linear-gradient(to right bottom, rgba(249, 247, 246, 0.1) 40% 66deg, rgba(33, 84, 172, 0.33)), url(img/logos/hdr-1-a2.png);
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(40%, rgba(249, 247, 246, 0.1)), to(rgba(33, 84, 172, 0.33))), url(../img/logos/hdr-1-a2.png);
+  background-image: linear-gradient(to right bottom, rgba(249, 247, 246, 0.1) 40% 66deg, rgba(33, 84, 172, 0.33)), url(../img/logos/hdr-1-a2.png);
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -761,15 +761,15 @@ iframe {
 }
 
 .card__picture--1 {
-  background-image: url(img/food/Food2.jpg);
+  background-image: url(../img/food/Food2.jpg);
 }
 
 .card__picture--2 {
-  background-image: url(img/food/Food2.jpg);
+  background-image: url(../img/food/Food2.jpg);
 }
 
 .card__picture--3 {
-  background-image: url(img/food/Food2.jpg);
+  background-image: url(../img/food/Food2.jpg);
 }
 
 .card__heading {
