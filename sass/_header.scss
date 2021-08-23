@@ -37,6 +37,48 @@
 			margin-left: 2rem;
 		}
 	}
+
+	& .header-parent-img {
+		position: relative;
+
+		& .child-img {
+			height: 6.5rem;
+			max-height: 8rem;
+			max-width: 100%;
+			filter: brightness(85%);
+			transition: all 0.25s ease-in;
+
+			&:hover {
+				height: 7.5rem;
+				filter: brightness(100%);
+				margin-top: 0rem;
+			}
+			@media only screen and (max-width: $bp-small) {
+				filter: brightness(100%);
+			}
+		}
+		.img--1 {
+			position: absolute;
+			top: 75%;
+			left: 0rem;
+		}
+		.img--2 {
+			position: absolute;
+			top: 85%;
+			left: 5.5rem;
+		}
+		.img--3 {
+			position: absolute;
+			top: 90%;
+			left: 15rem;
+		}
+		.img--4 {
+			position: absolute;
+			top: 92%;
+			left: 25rem;
+		}
+	}
+
 	&__sub {
 		max-height: 85vh;
 		display: grid;
@@ -79,7 +121,7 @@
 	&__seenon-logos {
 		min-height: 6rem;
 		margin-top: -2rem;
-		display: grid;
+		display: none;
 		grid-template-columns: repeat(4, 1fr);
 		grid-column-gap: 3rem;
 		justify-items: center;

@@ -304,6 +304,58 @@ iframe {
   }
 }
 
+.header .header-parent-img {
+  position: relative;
+}
+
+.header .header-parent-img .child-img {
+  height: 6.5rem;
+  max-height: 8rem;
+  max-width: 100%;
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.header .header-parent-img .child-img:hover {
+  height: 7.5rem;
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  margin-top: 0rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header .header-parent-img .child-img {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+}
+
+.header .header-parent-img .img--1 {
+  position: absolute;
+  top: 75%;
+  left: 0rem;
+}
+
+.header .header-parent-img .img--2 {
+  position: absolute;
+  top: 85%;
+  left: 5.5rem;
+}
+
+.header .header-parent-img .img--3 {
+  position: absolute;
+  top: 90%;
+  left: 15rem;
+}
+
+.header .header-parent-img .img--4 {
+  position: absolute;
+  top: 92%;
+  left: 25rem;
+}
+
 .header__sub {
   max-height: 85vh;
   display: -ms-grid;
@@ -364,8 +416,7 @@ iframe {
 .header__seenon-logos {
   min-height: 6rem;
   margin-top: -2rem;
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 3rem;
