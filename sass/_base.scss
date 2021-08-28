@@ -42,6 +42,10 @@ body {
 	color: $color-grey-dark-2;
 	font-weight: 300;
 	line-height: 1.6;
+
+	@media only screen and (max-width: $bp-small) {
+		max-width: 100vw;
+	}
 }
 
 .container {
