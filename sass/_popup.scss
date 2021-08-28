@@ -48,6 +48,10 @@
 		grid-gap: 1rem;
 		grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
 		grid-template-rows: [row1-start] auto [row2-start] auto [row2-end];
+
+		@media only screen and (max-width: $bp-small) {
+			grid-template-columns: [col1-start] 1fr;
+		}
 	}
 
 	.contactbox {
@@ -63,6 +67,10 @@
 			grid-column: col3-start;
 			grid-row: row1-start;
 		}
+
+		@media only screen and (max-width: $bp-small) {
+			font-size: 75%;
+		}
 	}
 
 	.contactform {
@@ -75,6 +83,9 @@
 		padding: 1rem;
 		background: rgba(119, 156, 216, 0.664) 60%;
 		text-align: left;
+		@media only screen and (max-width: $bp-small) {
+			display: none;
+		}
 	}
 	.form--entry {
 		grid-column: col1-start/col2-start;

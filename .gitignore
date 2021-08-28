@@ -77,3 +77,6 @@ typings/
 
 # Visual Studio
 .vscode/
+
+# scratch work dir
+.scratch/

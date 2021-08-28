@@ -2,7 +2,7 @@
 	background-color: $color-grey-dark-1;
 	grid-column: full-start / col-end 6;
 	background-image: linear-gradient(rgba($color-secondary, 0.7), rgba($color-secondary, 0.7)), url(../img/hero.png);
-	background-size: 12rem;
+	background-size: 15rem;
 	/*background-position: ;*/
 	padding: 4rem;
 	padding-top: 0rem;
@@ -19,6 +19,7 @@
 	}
 
 	@media only screen and (max-width: $bp-small) {
+		background-size: 18rem;
 		padding: 5rem;
 		grid-template-columns: 1fr;
 	}
@@ -55,17 +56,24 @@
 			}
 			@media only screen and (max-width: $bp-small) {
 				filter: brightness(100%);
+				max-height: 3.5rem;
 			}
 		}
 		.img--1 {
 			position: absolute;
 			top: 75%;
 			left: 0rem;
+			@media only screen and (max-width: $bp-small) {
+				left: 4rem;
+			}
 		}
 		.img--2 {
 			position: absolute;
 			top: 85%;
 			left: 5.5rem;
+			@media only screen and (max-width: $bp-small) {
+				left: 8.5rem;
+			}
 		}
 		.img--3 {
 			position: absolute;
@@ -76,6 +84,9 @@
 			position: absolute;
 			top: 92%;
 			left: 25rem;
+			@media only screen and (max-width: $bp-small) {
+				left: 21rem;
+			}
 		}
 	}
 
