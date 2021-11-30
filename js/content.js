@@ -1,6 +1,6 @@
 
 
-  const menupdf = `"https://www.texasroadhouse.com/texas-roadhouse-master-menu.pdf"`;
+  const menupdf = `"pages/Thermy Therm Cafe Menu.pdf"`;
 
   MenuinnerText = () => {
     return `<div class="menu">

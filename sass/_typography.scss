@@ -21,6 +21,8 @@
 	}
 	&--dark {
 		color: $color-grey-dark-1;
+		text-shadow: 0.65rem 0.65rem 0.5rem rgb(114, 132, 232);
+		font-weight: 800;
 	}
 }
 
