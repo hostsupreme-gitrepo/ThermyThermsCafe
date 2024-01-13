@@ -1,0 +1,114 @@
+.header {
+	background-color: $color-grey-dark-1;
+	grid-column: full-start / col-end 6;
+	background-image: linear-gradient(rgba($color-secondary, 0.7), rgba($color-secondary, 0.7)), url(../img/hero.png);
+	background-size: 12rem;
+	/*background-position: ;*/
+	padding: 8rem;
+	padding-top: 4rem;
+
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr min-content minmax(6rem, min-content);
+
+	grid-row-gap: 1.5rem;
+	justify-content: center;
+
+	@media only screen and (max-width: $bp-medium) {
+		grid-column: 1 / -1;
+	}
+
+	@media only screen and (max-width: $bp-small) {
+		padding: 5rem;
+		grid-template-columns: 1fr;
+	}
+	&__logo {
+		height: 60rem;
+		justify-self: left;
+
+		@media only screen and (max-width: $bp-small) {
+			height: 45rem;
+			justify-self: center;
+		}
+	}
+	&__sub {
+		display: grid;
+		justify-self: center;
+		grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+
+		@media only screen and (max-width: $bp-small) {
+			grid-template-rows: auto;
+		}
+	}
+
+	&__btn {
+		align-self: start;
+		justify-self: start;
+
+		@media only screen and (max-width: $bp-small) {
+			align-self: center;
+			justify-self: center;
+		}
+	}
+
+	&__seenon-text {
+		display: grid;
+		grid-template-columns: 1fr max-content 1fr;
+		grid-column-gap: 1.5rem;
+		align-items: center;
+
+		font-size: 1.6rem;
+		color: $color-grey-light-2;
+
+		&::before,
+		&::after {
+			content: '';
+			height: 1px;
+			display: block;
+			background-color: currentColor;
+		}
+	}
+
+	&__seenon-logos {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: 3rem;
+		justify-items: center;
+		align-items: center;
+
+		img {
+			height: 2.5rem;
+			max-height: 4rem;
+			max-width: 100%;
+			filter: brightness(70%);
+			transition: all 0.25s ease-in;
+
+			&:hover {
+				height: 3.5rem;
+				filter: brightness(100%);
+				margin-top: -1.5rem;
+			}
+			@media only screen and (max-width: $bp-small) {
+				filter: brightness(100%);
+			}
+		}
+	}
+
+	.heading-2 {
+		color: rgb(194, 188, 188);
+		padding-top: 20rem;
+		text-shadow: 0.25rem 0.25rem 0.25rem rgb(116, 120, 143);
+
+		@media only screen and (max-width: $bp-small) {
+			padding-top: 1rem;
+			text-align: center;
+		}
+	}
+	.heading-1 {
+		@media only screen and (max-width: $bp-small) {
+			padding: 0.5rem;
+			font-size: 2.5rem;
+			text-align: center;
+		}
+	}
+}
